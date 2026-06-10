@@ -29,6 +29,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ziiix01-ray', // Usually your GitHub org/user name.
   projectName: 'EQ_Manual', // Usually your repo name.
+  trailingSlash: false,
   deploymentBranch: 'gh-pages', // The branch name used for deployment, this one is fixed.
 
   onBrokenLinks: 'throw',
