@@ -55,12 +55,7 @@ const config = {
           editUrl:
             'https://github.com/ziiix01-ray/EQ_Manual/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
+        blog: false, 
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -105,7 +100,6 @@ const config = {
             position: 'left',
           },
           // -----------------------
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/ziiix01-ray/EQ_Manual',
             label: 'GitHub',
