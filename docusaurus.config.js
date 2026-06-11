@@ -86,7 +86,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Ray文庫',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -96,9 +96,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '說明書',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -110,13 +110,13 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+            //title: 'Docs',
+            //items: [
+              //{
+                //label: 'Tutorial',
+                //to: '/docs/intro',
+              //},
+            //],
           },
           {
             title: 'Community',
