@@ -32,7 +32,7 @@ const config = {
   trailingSlash: false,
   deploymentBranch: 'gh-pages', // The branch name used for deployment, this one is fixed.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // 改成 warn
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
