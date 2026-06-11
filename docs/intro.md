@@ -13,14 +13,14 @@ sidebar_position: 1
 ### 快速導覽按鈕
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '20px'}}>
-  <a className="button button--primary button--lg" href="/EQ_Manual/instruction">📖 指令說明書</a>
-  <a className="button button--primary button--lg" href="/EQ_Manual/cpu">📖 CPU說明書</a>
-  <a className="button button--primary button--lg" href="/EQ_Manual/io">📖 IO模組</a>
+  <a className="button button--primary button--lg" href="/EQ_Manual/docs/instruction">📖 指令說明書</a>
+  <a className="button button--primary button--lg" href="/EQ_Manual/docs/cpu">📖 CPU說明書</a>
+  <a className="button button--primary button--lg" href="/EQ_Manual/docs/io">📖 IO模組</a>
 </div>
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '10px'}}>
-  <a className="button button--secondary button--lg" href="/EQ_Manual/cclink-qj61">📖 CC-Link說明書</a>
-  <a className="button button--secondary button--lg" href="/EQ_Manual/analog-ad">📖 類比模組</a>
+  <a className="button button--secondary button--lg" href="/EQ_Manual/docs/cclink-qj61">📖 CC-Link說明書</a>
+  <a className="button button--secondary button--lg" href="/EQ_Manual/docs/analog-ad">📖 類比模組</a>
 </div>
 
 ---

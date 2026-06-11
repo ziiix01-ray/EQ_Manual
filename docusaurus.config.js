@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '設備說明書',
+  title: 'BML設備說明書',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -49,7 +49,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/', // 加入這行，讓說明書變成首頁
+          //routeBasePath: '/', <-- 確保這行消失了
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -96,7 +96,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '說明書',
+            label: 'PLC說明書',
           },
           
           {
