@@ -1,45 +1,29 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'BML設備說明書',
-  tagline: 'Dinosaurs are cool',
+  tagline: '三菱 Q 系列 PLC 與 變頻器技術文庫',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
   url: 'https://ziiix01-ray.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/EQ_Manual/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ziiix01-ray', // Usually your GitHub org/user name.
-  projectName: 'EQ_Manual', // Usually your repo name.
+  organizationName: 'ziiix01-ray',
+  projectName: 'EQ_Manual',
   trailingSlash: false,
-  deploymentBranch: 'gh-pages', // The branch name used for deployment, this one is fixed.
+  deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: 'warn', // 改成 warn
+  onBrokenLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -49,22 +33,10 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          //routeBasePath: '/', <-- 確保這行消失了
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/ziiix01-ray/EQ_Manual/tree/main/',
+          editUrl: 'https://github.com/ziiix01-ray/EQ_Manual/tree/main/',
         },
+        // 修正處：直接設定為 false，並刪除後方多餘的大括號與設定
         blog: false, 
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -75,7 +47,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
@@ -93,13 +64,11 @@ const config = {
             position: 'left',
             label: 'PLC說明書',
           },
-           // --- 新增下面這一段 ---
           {
-            to: '/docs/inverter-intro', // 對應剛剛在 md 檔案設定的 slug
+            to: '/docs/inverter-intro',
             label: '變頻器說明書',
             position: 'left',
           },
-          // -----------------------
           {
             href: 'https://github.com/ziiix01-ray/EQ_Manual',
             label: 'GitHub',
@@ -111,15 +80,6 @@ const config = {
         style: 'dark',
         links: [
           {
-            //title: 'Docs',
-            //items: [
-              //{
-                //label: 'Tutorial',
-                //to: '/docs/intro',
-              //},
-            //],
-          },
-          {
             title: 'Community',
             items: [
               {
@@ -130,27 +90,20 @@ const config = {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ziiix01-ray/EQ_Manual',
               },
+              // 修正處：移除 Footer 裡的 Blog 連結
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ray文庫, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
