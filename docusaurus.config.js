@@ -98,9 +98,16 @@ const config = {
             position: 'left',
             label: 'PLC說明書',
           },
-          
+           // --- 新增下面這一段 ---
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/docs/inverter-intro', // 對應剛剛在 md 檔案設定的 slug
+            label: '變頻器說明書',
+            position: 'left',
+          },
+          // -----------------------
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://github.com/ziiix01-ray/EQ_Manual',
             label: 'GitHub',
             position: 'right',
           },
