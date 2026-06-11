@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ziiix01-ray.github.io/EQ_Manual/blog</id>
-    <title>設備說明書 Blog</title>
+    <title>BML設備說明書 Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ziiix01-ray.github.io/EQ_Manual/blog"/>
-    <subtitle>設備說明書 Blog</subtitle>
+    <subtitle>BML設備說明書 Blog</subtitle>
     <icon>https://ziiix01-ray.github.io/EQ_Manual/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
