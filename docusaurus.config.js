@@ -49,10 +49,11 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: '/', // 加入這行，讓說明書變成首頁
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ziiix01-ray/EQ_Manual/tree/main/',
         },
         blog: {
           showReadingTime: true,

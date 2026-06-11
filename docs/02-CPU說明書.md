@@ -1,0 +1,6 @@
+---
+sidebar_label: '2. CPU說明書'
+sidebar_position: 3
+---
+# CPU 說明書
+在此撰寫 CPU 規格與設定...
