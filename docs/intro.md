@@ -1,5 +1,4 @@
 ---
-slug: /
 sidebar_label: '三菱Q系列PLC簡介'
 sidebar_position: 1
 ---
