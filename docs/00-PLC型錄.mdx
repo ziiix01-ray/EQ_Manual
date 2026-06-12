@@ -2,6 +2,7 @@
 sidebar_label: '三菱Q系列PLC型錄'
 sidebar_position: 2
 slug: /catalog
+hide_table_of_contents: true  <-- 加上這一行
 ---
 
 import Tabs from '@theme/Tabs';
@@ -158,11 +159,29 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 <style>{`
-  .markdown img {
+  /* 標籤列：依然保持不換行橫向捲動 */
+  .tabs {
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .tabs__item {
+    white-space: nowrap !important;
+    padding: 12px 25px !important;
+    font-weight: bold;
+  }
+
+  /* 圖片：強制 100% 寬度，並移除可能的左右邊距 */
+  .tab-item img {
     display: block;
-    margin: 0 auto 20px auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100vw !important;  /* 使用視窗寬度單位，或者是下面這行 */
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: none !important; /* 移除最大寬度限制 */
+    border-radius: 0;           /* 如果要最大化，圓角也可以拿掉 */
   }
 `}</style>
