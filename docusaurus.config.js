@@ -59,20 +59,21 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'PLC說明書',
+           type: 'docSidebar',
+           sidebarId: 'plcSidebar',      // 指向剛才定義的 plcSidebar
+           position: 'left',
+           label: 'PLC說明書',
           },
           {
-            to: '/docs/inverter-intro',
-            label: '變頻器說明書',
-            position: 'left',
+           type: 'docSidebar',           // 修改這裡：從 'to' 改成 'docSidebar'
+           sidebarId: 'inverterSidebar', // 指向剛才定義的 inverterSidebar
+           position: 'left',
+           label: '變頻器說明書',
           },
           {
-            href: 'https://github.com/ziiix01-ray/EQ_Manual',
-            label: 'GitHub',
-            position: 'right',
+           href: 'https://github.com/ziiix01-ray/EQ_Manual',
+           label: 'GitHub',
+           position: 'right',
           },
         ],
       },
