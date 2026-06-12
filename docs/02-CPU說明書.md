@@ -1,6 +1,6 @@
 ---
 sidebar_label: '2. CPU說明書'
-sidebar_position: 3
+sidebar_position: 4
 slug: /cpu
 ---
 # CPU 說明書
