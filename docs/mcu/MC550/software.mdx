@@ -57,3 +57,33 @@ import TabItem from '@theme/TabItem';
     Variable / Symbol 定義表...
   </TabItem>
 </Tabs>
+
+<style>{`
+  /* 強制標籤排成一橫列，不換行 */
+  .tabs {
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;            /* 空間不夠時出現橫向捲動條 */
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* 確保每個標籤內的文字都不斷行 */
+  .tabs__item {
+    white-space: nowrap !important;
+    padding: 10px 20px !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  /* 美化捲動條（可選） */
+  .tabs::-webkit-scrollbar {
+    height: 5px;
+  }
+  .tabs::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+`}</style>
