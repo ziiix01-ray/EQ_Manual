@@ -12,9 +12,48 @@ import TabItem from '@theme/TabItem';
 請點擊下方分頁查看各硬體章節內容：
 
 <Tabs defaultValue="config">
-  <TabItem value="config" label="系統組態">
-    ### 系統組態
-    在此撰寫或放入系統組態圖...
+<TabItem value="config" label="系統組態">
+    ## 2. 系統組態 (System Configuration)
+
+    本節說明 MC-550 System MX 的系統配置及其注意事項。
+
+    ### 2.1 系統架構概要
+    MC-550 系統主要設計用於控制各類生產線系統，包括金屬加工、紙張與薄膜處理以及印刷系統。
+
+    #### 2.1.1 系統配置圖
+    下圖展示了 MC-550 與各單元（如 PLC、操作單元、驅動器等）的連接架構：
+
+    ![MC550系統配置圖](/img/mcu/mc550_config.jpg)
+    *圖 2.1.1：系統組態示意圖*
+
+    ---
+
+    ### 2.1.2 系統組態注意事項
+    在配置 MC-550 系統時，請務必參考以下各單元的連接數量與規格限制。
+
+    #### 2.1.2.1 MC-550 單元構成
+    *   **核心組成**：由一個**主控制單元 (MCU)** 與多個**功率放大單元 (PAU)** 組成。
+    *   **擴充能力**：一個 MCU 最多可透過 PWM 電纜連接 **8 個 PAU**，實現高達 **8 軸** 的完全同步驅動控制。
+
+    #### 2.1.2.2 外部設備連接能力 (Table 2.1.1)
+    多種外部設備可連接至 MC-550 單元，詳細規格如下表：
+
+    | 可連接設備 | 數量限制 | 連接點 | 介面規格 |
+    | :--- | :--- | :--- | :--- |
+    | **操作面板 (OPU)** | 1 台 | MCU 序列埠 | RS232C |
+    | **開發與調試用 PC (PC-AT)** | 1 台 | MCU 序列埠 | RS232C |
+    | **變頻器 (Inverters)** | 最多 7 台 | MCU 擴充卡 (HMAN2) | HMAN (RS485) |
+    | **遠端 I/O 單元 (Remote I/O)** | 最多 7 台 | MCU 擴充卡 (HMAN2) | HMAN (RS485) |
+
+    :::note 註記
+    1. 支援 Vector Inverter AF-1800α 等型號。
+    2. 支援 Driver I/O2 Unit (Remote I/O Unit) 等型號。
+    :::
+
+    #### 2.1.2.3 與 PLC 的通訊介面
+    *   **連接方式**：MC-550 可使用 **CC-Link 擴充卡** 連接至 PLC。
+    *   **站號容量**：單一 CC-Link 主站 (Master Station) 最多可連結 **16 台 MC-550 單元**。
+
   </TabItem>
   <TabItem value="specs" label="硬件規格">
     ### 硬件規格
