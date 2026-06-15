@@ -64,6 +64,14 @@ const config = {
            position: 'left',
            label: 'PLC說明書',
           },
+          // --- 插入 MCU 說明書 ---
+          {
+           type: 'docSidebar',
+           sidebarId: 'mcuSidebar',
+           position: 'left',
+           label: 'MCU說明書',
+          },
+          // -----------------------
           {
            type: 'docSidebar',           // 修改這裡：從 'to' 改成 'docSidebar'
            sidebarId: 'inverterSidebar', // 指向剛才定義的 inverterSidebar
